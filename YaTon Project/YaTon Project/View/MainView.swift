@@ -43,10 +43,13 @@ struct detailView: View {
     var body: some View {
         ForEach(0..<4) { number in
             VStack {
-                Image(filteringModel(category: category)[number].imageName)
-                    .resizable()
-                    .frame(width: 150, height: 150)
-                    .aspectRatio(contentMode: .fit)
+                let url = filteringModel(category: category)[number].url
+                Link(destination: URL(string: url)!) {
+                    Image(filteringModel(category: category)[number].imageName)
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                        .aspectRatio(contentMode: .fit)
+                }
                 Text(filteringModel(category: category)[number].name)
                 Text(filteringModel(category: category)[number].price.description)
             }

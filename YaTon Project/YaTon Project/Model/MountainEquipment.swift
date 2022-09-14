@@ -16,6 +16,7 @@ struct MountainEquipment {
     var imagePath: String {
         category.rawValue + "/\(imageName)"
     }
+    var url: String
 }
 
 enum Category: String, CaseIterable {
