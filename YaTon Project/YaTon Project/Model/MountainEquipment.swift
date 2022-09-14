@@ -20,9 +20,9 @@ struct MountainEquipment {
 }
 
 enum Category: String, CaseIterable {
-    case northFace = "NorthFace"
+    case northFace = "THE NORTH FACE"
     case discovery = "Discovery"
-    case nepa = "Nepa"
-    case eider = "Eider"
+    case nepa = "NEPA"
+    case eider = "EIDER"
     case columbia = "Columbia"
 }
