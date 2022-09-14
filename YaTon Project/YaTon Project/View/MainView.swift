@@ -15,7 +15,7 @@ struct MainView: View {
             Text("등린아 이거 입고 가")
                 .bold()
                 .font(.body)
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading) {
                     ForEach(models, id: \.self) { model in
                         Text(model.rawValue)
@@ -26,10 +26,9 @@ struct MainView: View {
             }
             .padding()
         }
-        .background(AngularGradient(colors: [.purple, .green, .blue],
-                                    center: .center,
-                                    startAngle: .degrees(10),
-                                    endAngle: .degrees(360)))
+        .background(Image("img").resizable().frame(width: UIScreen.main.bounds.width,
+                                                   height: UIScreen.main.bounds.height + 10,
+                                                   alignment: .center).opacity(0.3))
     }
 }
 
@@ -64,11 +63,11 @@ struct detailView: View {
                 Text(filteringModel(category: category)[number].price)
                     .font(Font.caption)
             }
-            .frame(width: 200, height: 200)
+            .frame(width: 180, height: 180)
             .padding()
             .border(Color(.systemGray5), width: 0.8)
-            .listStyle(.automatic)
         }
+        .background(.white)
     }
     
     func filteringModel(category: Category) -> [MountainEquipment] {
