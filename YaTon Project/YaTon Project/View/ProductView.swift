@@ -37,7 +37,7 @@ struct detailView: View {
         .background(.white)
     }
         
-        func filteringModel(category: Category) -> [MountainEquipment] {
+        func filteringModel(category: Category) -> [Product] {
             let newModel = model.filter { $0.category == category }
             
             return newModel
