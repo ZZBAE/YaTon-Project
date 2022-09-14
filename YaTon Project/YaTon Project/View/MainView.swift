@@ -11,20 +11,27 @@ struct MainView: View {
     let models = Category.allCases
     
     var body: some View {
-        NavigationView {
-                List {
-                    VStack(alignment: .leading) {
-                        ForEach(models, id: \.self) { model in
-                            Text(model.rawValue)
-                                .font(.title3.bold())
-                            productsScrollView(category: model)
-                        }
+        VStack {
+            Text("등린아 이거 입고 가")
+                .bold()
+                .font(.body)
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ForEach(models, id: \.self) { model in
+                        Text(model.rawValue)
+                            .font(.title3.bold())
+                        productsScrollView(category: model)
                     }
                 }
-                .navigationTitle("등린이를 위한 등산복 추천")
             }
+            .padding()
         }
+        .background(AngularGradient(colors: [.purple, .green, .blue],
+                                    center: .center,
+                                    startAngle: .degrees(10),
+                                    endAngle: .degrees(360)))
     }
+}
 
 struct productsScrollView: View {
     var category: Category
@@ -53,10 +60,13 @@ struct detailView: View {
                         .aspectRatio(contentMode: .fit)
                 }
                 Text(filteringModel(category: category)[number].name)
-                Text(filteringModel(category: category)[number].price.description)
+                    .font(Font.caption)
+                Text(filteringModel(category: category)[number].price)
+                    .font(Font.caption)
             }
+            .frame(width: 200, height: 200)
             .padding()
-            .border(.cyan, width: 3)
+            .border(Color(.systemGray5), width: 0.8)
             .listStyle(.automatic)
         }
     }
