@@ -1,0 +1,69 @@
+//
+//  View.swift
+//  YaTon Project
+//
+//  Created by Groot on 2022/09/14.
+//
+
+import SwiftUI
+
+struct MainView: View {
+    let models = Category.allCases
+    
+    var body: some View {
+        NavigationView {
+            ScrollView {
+                VStack {
+                    ForEach(models, id: \.self) { model in
+                        Text(model.rawValue)
+                        productsScrollView(category: model)
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct productsScrollView: View {
+    var category: Category
+    
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack{
+                detailView(category: category)
+            }
+        }
+    }
+}
+
+struct detailView: View {
+    private let model = ModelData().mountainEquipments
+    var category: Category
+    
+    var body: some View {
+        ForEach(0..<4) { number in
+            VStack {
+                Image(filteringModel(category: category)[number].imageName)
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .aspectRatio(contentMode: .fit)
+                Text(filteringModel(category: category)[number].name)
+                Text(filteringModel(category: category)[number].price.description)
+            }
+            .padding()
+            .border(.cyan, width: 1)
+        }
+    }
+    
+    func filteringModel(category: Category) -> [MountainEquipment] {
+        let newModel = model.filter { $0.category == category }
+        
+        return newModel
+    }
+}
+
+struct View_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
+}
