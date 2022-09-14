@@ -1,0 +1,34 @@
+//
+//  CategoryItem.swift
+//  YaTon Project
+//
+//  Created by 변재은 on 2022/09/14.
+//
+
+import SwiftUI
+
+struct CategoryItem: View {
+    var mountainEquipment: MountainEquipment
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            mountainEquipment.image
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 155, height: 155)
+                .cornerRadius(5)
+            Text(mountainEquipment.name)
+                .foregroundColor(.primary)
+                .font(.caption)
+        }
+        .padding(.leading, 15)
+    }
+}
+
+struct CategoryItem_Previews: PreviewProvider {
+    static var previews: some View {
+        CategoryItem(mountainEquipment: MountainEquipment())
+    }
+}
+
+//        CategoryItem(landmark: ModelData().landmarks[0])

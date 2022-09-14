@@ -10,7 +10,7 @@ import Foundation
 import Foundation
 import SwiftUI
 
-struct MountainEquipment: Hashable, Codable, Identifiable {
+struct MountainEquipment: Hashable, Identifiable, Codable {
     var id: Int
     var name: String
     var price: Int
