@@ -1,5 +1,5 @@
 //
-//  View.swift
+//  ProductMainView.swift
 //  YaTon Project
 //
 //  Created by Groot on 2022/09/14.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct ProductMainView: View {
     let models = Category.allCases
     
     var body: some View {
@@ -34,6 +34,6 @@ struct MainView: View {
 
 struct View_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ProductMainView()
     }
 }

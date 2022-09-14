@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		378F994728D1833100B4B8D6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F994628D1833100B4B8D6 /* MainView.swift */; };
+		378F994728D1833100B4B8D6 /* ProductMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F994628D1833100B4B8D6 /* ProductMainView.swift */; };
 		378F994B28D1A55A00B4B8D6 /* ProductGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F994A28D1A55A00B4B8D6 /* ProductGroupView.swift */; };
 		378F994D28D1A5A000B4B8D6 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F994C28D1A5A000B4B8D6 /* ProductView.swift */; };
 		7E9F8C9828D16FE5006E241D /* MountainEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8C9728D16FE5006E241D /* MountainEquipment.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		378F994628D1833100B4B8D6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		378F994628D1833100B4B8D6 /* ProductMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMainView.swift; sourceTree = "<group>"; };
 		378F994A28D1A55A00B4B8D6 /* ProductGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGroupView.swift; sourceTree = "<group>"; };
 		378F994C28D1A5A000B4B8D6 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		7E9F8C9728D16FE5006E241D /* MountainEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainEquipment.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		378F994528D1831B00B4B8D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				378F994628D1833100B4B8D6 /* MainView.swift */,
+				378F994628D1833100B4B8D6 /* ProductMainView.swift */,
 				378F994A28D1A55A00B4B8D6 /* ProductGroupView.swift */,
 				378F994C28D1A5A000B4B8D6 /* ProductView.swift */,
 			);
@@ -165,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378F994728D1833100B4B8D6 /* MainView.swift in Sources */,
+				378F994728D1833100B4B8D6 /* ProductMainView.swift in Sources */,
 				7E9F8C9828D16FE5006E241D /* MountainEquipment.swift in Sources */,
 				7EDD244428D1555A007E9782 /* YaTon_ProjectApp.swift in Sources */,
 				7E9F8CA628D178CB006E241D /* ModelData.swift in Sources */,
