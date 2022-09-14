@@ -11,7 +11,7 @@ import SwiftUI
 struct YaTon_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
+            MainView()
         }
     }
 }

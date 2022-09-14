@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		378F994728D1833100B4B8D6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F994628D1833100B4B8D6 /* View.swift */; };
+		378F994728D1833100B4B8D6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F994628D1833100B4B8D6 /* MainView.swift */; };
 		7E9F8C9828D16FE5006E241D /* MountainEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8C9728D16FE5006E241D /* MountainEquipment.swift */; };
 		7E9F8CA628D178CB006E241D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8CA528D178CB006E241D /* ModelData.swift */; };
 		7EDD244428D1555A007E9782 /* YaTon_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD244328D1555A007E9782 /* YaTon_ProjectApp.swift */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		378F994628D1833100B4B8D6 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		378F994628D1833100B4B8D6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7E9F8C9728D16FE5006E241D /* MountainEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainEquipment.swift; sourceTree = "<group>"; };
 		7E9F8CA528D178CB006E241D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		7EDD244028D1555A007E9782 /* YaTon Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YaTon Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +39,7 @@
 		378F994528D1831B00B4B8D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				378F994628D1833100B4B8D6 /* View.swift */,
+				378F994628D1833100B4B8D6 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378F994728D1833100B4B8D6 /* View.swift in Sources */,
+				378F994728D1833100B4B8D6 /* MainView.swift in Sources */,
 				7E9F8C9828D16FE5006E241D /* MountainEquipment.swift in Sources */,
 				7EDD244428D1555A007E9782 /* YaTon_ProjectApp.swift in Sources */,
 				7E9F8CA628D178CB006E241D /* ModelData.swift in Sources */,
