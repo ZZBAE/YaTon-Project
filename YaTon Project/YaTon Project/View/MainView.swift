@@ -12,17 +12,19 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                VStack {
-                    ForEach(models, id: \.self) { model in
-                        Text(model.rawValue)
-                        productsScrollView(category: model)
+                List {
+                    VStack(alignment: .leading) {
+                        ForEach(models, id: \.self) { model in
+                            Text(model.rawValue)
+                                .font(.title3.bold())
+                            productsScrollView(category: model)
+                        }
                     }
                 }
+                .navigationTitle("등린이를 위한 등산복 추천")
             }
         }
     }
-}
 
 struct productsScrollView: View {
     var category: Category
