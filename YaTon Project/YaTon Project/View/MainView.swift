@@ -12,7 +12,7 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            List {
                 VStack {
                     ForEach(models, id: \.self) { model in
                         Text(model.rawValue)
@@ -51,7 +51,8 @@ struct detailView: View {
                 Text(filteringModel(category: category)[number].price.description)
             }
             .padding()
-            .border(.cyan, width: 1)
+            .border(.cyan, width: 3)
+            .listStyle(.automatic)
         }
     }
     

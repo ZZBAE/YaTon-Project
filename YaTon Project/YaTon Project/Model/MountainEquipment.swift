@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MountainEquipment {
     var name: String
-    var price: Int
+    var price: String
     var category: Category
     var imageName: String
     var imagePath: String {
