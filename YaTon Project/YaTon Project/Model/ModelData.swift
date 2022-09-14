@@ -8,7 +8,7 @@
 import Foundation
 
 struct ModelData {
-    var mountainEquipments = [
+    let products = [
         Product(name: "노스페이스 시티 칠러 자켓 NJ3LN01C",
                           price: "105,320 원",
                           category: .northFace,

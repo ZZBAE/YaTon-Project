@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct detailView: View {
-    private let model = ModelData().mountainEquipments
+struct ProductView: View {
+    private let model = ModelData().products
     var category: Category
     
     var body: some View {

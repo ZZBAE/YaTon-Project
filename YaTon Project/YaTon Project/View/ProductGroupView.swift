@@ -13,7 +13,7 @@ struct ProductGroupView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack{
-                detailView(category: category)
+                ProductView(category: category)
             }
         }
     }
