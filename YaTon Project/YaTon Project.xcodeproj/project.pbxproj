@@ -8,25 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7E9F8C9828D16FE5006E241D /* MountainEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8C9728D16FE5006E241D /* MountainEquipment.swift */; };
-		7E9F8CA028D17273006E241D /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8C9F28D17273006E241D /* CategoryHome.swift */; };
-		7E9F8CA228D172CA006E241D /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8CA128D172CA006E241D /* CategoryRow.swift */; };
-		7E9F8CA428D172EB006E241D /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8CA328D172EB006E241D /* CategoryItem.swift */; };
 		7E9F8CA628D178CB006E241D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F8CA528D178CB006E241D /* ModelData.swift */; };
 		7EDD244428D1555A007E9782 /* YaTon_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD244328D1555A007E9782 /* YaTon_ProjectApp.swift */; };
-		7EDD244628D1555A007E9782 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD244528D1555A007E9782 /* ContentView.swift */; };
 		7EDD244828D1555D007E9782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDD244728D1555D007E9782 /* Assets.xcassets */; };
 		7EDD244B28D1555D007E9782 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDD244A28D1555D007E9782 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E9F8C9728D16FE5006E241D /* MountainEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainEquipment.swift; sourceTree = "<group>"; };
-		7E9F8C9F28D17273006E241D /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
-		7E9F8CA128D172CA006E241D /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
-		7E9F8CA328D172EB006E241D /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		7E9F8CA528D178CB006E241D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		7EDD244028D1555A007E9782 /* YaTon Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YaTon Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDD244328D1555A007E9782 /* YaTon_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTon_ProjectApp.swift; sourceTree = "<group>"; };
-		7EDD244528D1555A007E9782 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7EDD244728D1555D007E9782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EDD244A28D1555D007E9782 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,17 +43,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7E9F8C9A28D17122006E241D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7EDD244528D1555A007E9782 /* ContentView.swift */,
-				7E9F8C9F28D17273006E241D /* CategoryHome.swift */,
-				7E9F8CA128D172CA006E241D /* CategoryRow.swift */,
-				7E9F8CA328D172EB006E241D /* CategoryItem.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		7EDD243728D1555A007E9782 = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				7EDD244328D1555A007E9782 /* YaTon_ProjectApp.swift */,
-				7E9F8C9A28D17122006E241D /* View */,
 				7E9F8C9928D17113006E241D /* Model */,
 				7EDD244728D1555D007E9782 /* Assets.xcassets */,
 				7EDD244928D1555D007E9782 /* Preview Content */,
@@ -168,11 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E9F8CA028D17273006E241D /* CategoryHome.swift in Sources */,
 				7E9F8C9828D16FE5006E241D /* MountainEquipment.swift in Sources */,
-				7E9F8CA228D172CA006E241D /* CategoryRow.swift in Sources */,
-				7EDD244628D1555A007E9782 /* ContentView.swift in Sources */,
-				7E9F8CA428D172EB006E241D /* CategoryItem.swift in Sources */,
 				7EDD244428D1555A007E9782 /* YaTon_ProjectApp.swift in Sources */,
 				7E9F8CA628D178CB006E241D /* ModelData.swift in Sources */,
 			);

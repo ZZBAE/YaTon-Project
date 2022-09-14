@@ -6,16 +6,14 @@
 //
 
 import Foundation
-
-import Foundation
 import SwiftUI
 
-struct MountainEquipment: Hashable, Identifiable, Codable {
-    var id: Int
+struct MountainEquipment {
     var name: String
     var price: Int
     var category: Category
-    enum Category: String, CaseIterable, Codable {
+    
+    enum Category: String, CaseIterable {
         case northFace = "NorthFace"
         case discovery = "Discovery"
         case K2 = "K2"
@@ -28,8 +26,8 @@ struct MountainEquipment: Hashable, Identifiable, Codable {
         case millet = "Millet"
     }
 
-    private var imageName: String
+    var imageName: String
     var image: Image {
-        Image(imageName)
+        Image(category.rawValue + "/\(imageName)")
     }
 }
